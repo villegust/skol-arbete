@@ -1,0 +1,26 @@
+body{
+    background-image: url("https://gadnrle.org/sites/default/files/parks/images/golf/pages/HighlandWalk/highland-02.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+img{
+    width: 8px;
+    height: 8px;
+}
+
+.objekt{
+    margin-top: 39%;
+    margin-left: 170px;
+    animation: move 4s linear;
+}
+
+@keyframes move {
+    0% {margin-left: 165px; margin-top: 39%;}
+    25% {margin-left: 120px; margin-top: 30%;}
+    50% {margin-left: 170px; margin-top: 20%;}
+    75% {margin-left: 180px; margin-top: 8%;}
+    100% {margin-left: 180px; margin-top: 8%;}
+
+}

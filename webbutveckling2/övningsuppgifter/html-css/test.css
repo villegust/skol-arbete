@@ -1,0 +1,51 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.header{
+    background-color: orange;
+    width: 1000px;
+    height: 100px;
+}
+
+.center{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    margin-top: 50px;
+    border: 10px solid orange;
+    border-radius: 30px;
+}
+
+
+.main{
+    background-color: white;
+    width: 650px;
+    height: 700px;
+    left: 300px;
+    top: auto;
+    margin: 50px;
+    padding: 15px;
+    position: absolute;
+    border: 10px solid orange;
+    border-radius: 30px;
+}
+
+
+h1{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}

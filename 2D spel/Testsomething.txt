@@ -1,0 +1,30 @@
+class Camera():
+    distance = 2
+    speed_limit = 20
+    number_of_cars = 0
+
+    def Calc_Speed(self):
+        registration = input("Registration Plate: ")
+        Speeding_List=[]
+        start = float(input("Start time: "))
+        end = float(input("End Time: "))
+        speed = self.distance/(end-start)
+        print(("Average Speed: ") + str(round(speed, 2)) + (" mph"))
+        if speed > self.speed_limit:
+            list3= [str(self.registration)]
+            Speeding_List.append(list3)
+            print("Vehicles Caught Speeding: " + str(Speeding_List))
+            return(program.Counter())
+        else:
+            print("Vehicle Not Speeding")
+            return(program.Counter())
+
+    def Counter():
+        self.number_of_cars = self.number_of_cars + 1
+        print("Number Of Cars Recorded: " + str(self.number_of_cars))                                 
+        return(program.Calc_Speed())
+
+
+
+program = Camera()
+print(program)

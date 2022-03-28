@@ -1,0 +1,51 @@
+body
+    {
+        background-color: chocolate;
+    }
+
+    .fyrkant
+    {
+        margin-left: auto;
+        margin-right: auto; 
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+        border: 2px solid black;
+    }
+
+    .rund
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+
+    .rundadkant
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+        border: 2px solid black;
+        border-radius: 10% 10% 10% 10%;
+        
+    }
+
+    .text
+    {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .punkt
+    {
+        font-size: 20px;
+    }

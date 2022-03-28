@@ -1,0 +1,1 @@
+I'm loaded, and I got stacks bruh bruh, all my homies from da trap bruh bruh.

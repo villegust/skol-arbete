@@ -1,0 +1,25 @@
+.ruta{
+    width: 100px;
+    height: 100px;
+    /* background-color: dimgray; */
+    animation: move 5s linear infinite;
+    position: absolute;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: royalblue;
+    position: relative;
+}
+
+@keyframes move {
+    /* from{margin-left: 0;}
+    to{margin-left: 300px;}   */
+    
+    0% {margin-left: 0px; margin-bottom: 0px; background-color: blueviolet;}
+    25% {margin-left: 300px; margin-top: 0px; background-color: chartreuse;}
+    50% {margin-left: 300px; margin-top: 300px; background-color: crimson;}
+    75% {margin-left: 0px; margin-top: 300px; background-color: cyan;}
+    100% {margin-left: 0px; margin-top: 0px; background-color: deeppink;}
+}

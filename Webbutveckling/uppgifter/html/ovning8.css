@@ -1,0 +1,23 @@
+img
+{
+    width: 400px;
+    height: 200px;
+}
+.column
+{
+    text-align: center;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+.rad
+{
+    display: flex;
+}
+
+p
+{
+    text-align: center;
+    font-size: 20px;
+}

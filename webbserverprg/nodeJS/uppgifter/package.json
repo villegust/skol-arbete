@@ -1,0 +1,17 @@
+{
+    "name": "countdown",
+    "version": "10.0.0",
+    "description": "",
+    "main": "uppgift7.js",
+    "keywords": [
+        "nedräkning",
+        "timer"
+    ],
+    "author": "test",
+    "license": "ISC",
+    "dependencies": {
+        "minimist": "^1.2.5",
+        "single-line-log": "^1.1.2",
+        "tiny-timer": "^1.6.0"
+    }
+}
