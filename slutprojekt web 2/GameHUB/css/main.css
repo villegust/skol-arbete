@@ -268,30 +268,26 @@ article{
 
 /* om oss */
 
-#contact-container{
-    min-height: 100vh;
+#card-container{
+    min-height: 50vh;
     margin-top: 150px;
     margin-bottom: 50px;
     padding: 2rem 0;
     text-align: center;
 }
 
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 var(--green-color);
   }
   
-  /* Add some padding inside the card container */
-  .cardContainer {
-    padding: 2px 16px;
-  }
-
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -300,7 +296,8 @@ article{
   
   /* Add rounded corners to the top left and the top right corner of the image */
   img {
-    border-radius: 5px 5px 0 0;
+    height: 400px;
+    
   }
 
 

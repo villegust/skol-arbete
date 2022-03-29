@@ -11,10 +11,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }))
 
-//Get the button
+//Får knappen
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// när användaren har scrollat ner 20px, så dycker knappen upp.
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -25,8 +25,12 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+//När man trycker på en knapp så scrollar den upp till toppen
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// datum skript
+document.write(new Date().getFullYear())
+
