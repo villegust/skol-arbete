@@ -355,7 +355,6 @@ article{
 @media(min-width: 1200px){
     /* reviews section */
     #reviews .container{
-        /* margin-top: 150px; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
