@@ -18,7 +18,13 @@ mongoose.connect(dbURI, {  }) //useNewUrlParser: true, useUnifiedTopology: true,
   .catch((err) => console.log(err));
 
 mongoose.connect(dbURI, (err) => {
-    console.log("mongoDB ansluten", err);
+    if (err) {
+        throw err;
+    }
+    else {
+      console.log("mongoDB ansluten");
+    }
+      
 })
 // routes
 app.get("/", (req, res) => res.render("home"));
