@@ -118,6 +118,7 @@ img{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 2rem;
+    
 }
 .flex{
     display: -webkit-box;
@@ -139,13 +140,17 @@ img{
     margin-bottom: 50px;
     padding: 2rem 0;
 }
+
+
 .header-item{
     position: relative;
     height: 420px;
+    box-shadow: 10px 5px 10px 10px rgb(0, 0, 0);
 }
 .header-item img{
     height: 100%;
     object-fit: cover;
+
 }
 .header-item-text{
     position: absolute;
@@ -261,6 +266,44 @@ article{
 }
 
 
+/* om oss */
+
+#contact-container{
+    min-height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .cardContainer {
+    padding: 2px 16px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+
 /* footer */
 #footer{
     background-color: var(--black);
@@ -308,7 +351,7 @@ article{
 /* media qeries */
 
 @media(min-width: 768px){
-    /* news & reviews */
+    /* reviews */
     #reviews article{
         display: grid;
         grid-template-columns: 2fr 3fr;
