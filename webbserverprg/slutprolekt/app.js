@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const authRoutes = require("./routes/authRoutes")
 
 const app = express();
 
@@ -21,7 +22,8 @@ mongoose.connect(dbURI, (err) => {
 })
 // routes
 app.get("/", (req, res) => res.render("home"));
-app.get("/smoothies", (req, res) => res.render("smoothies"));
+app.get("/otherSide", (req, res) => res.render("otherSide"));
+app.use(authRoutes);
 
 app.listen(3000, () => {
   console.log("Server är igång");
