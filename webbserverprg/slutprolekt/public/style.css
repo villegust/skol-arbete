@@ -89,7 +89,6 @@ button{
 header{
   display: flex;
   align-items: center;
-  background-color: aqua;
 }
 header img{
   width: 250px;
