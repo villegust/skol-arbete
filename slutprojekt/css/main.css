@@ -134,8 +134,8 @@ img{
 
 
 /* header section */
-#front-container{
-    min-height: 100vh;
+.front-container{
+    min-height: 50vh;
     margin-top: 150px;
     margin-bottom: 50px;
     padding: 2rem 0;
@@ -202,7 +202,7 @@ h1, h2, h3, h4{
     margin-top: 100px;
 }
 
-/* news */
+/* top 10 och reviews */
 .title{
     background-color: var(--green-color);
     padding: 1rem 0;
@@ -234,7 +234,7 @@ article{
     color: #fff;
 }
 .item-text{
-    padding: 2rem 0;
+    padding: 2rem 10px;
 }
 .h1{
     font-size: 2.2rem;
@@ -248,6 +248,7 @@ article{
 .item-text a:hover{
     opacity: 0.8;
 }
+
 .category{
     font-family: var(--oswald);
     font-size: 1.6rem;
@@ -263,6 +264,12 @@ article{
     opacity: 0.5;
     margin-top: 1.5rem;
     letter-spacing: 1px;
+}
+
+#info-taken{
+    display: grid;
+    margin-left: 100px;
+    gap: 20px 20px;
 }
 
 
@@ -439,6 +446,13 @@ article{
 
     #reviews .container{
         margin-top: 150px;
+    }
+
+    #info-taken{
+        display: grid;
+        justify-content: center;
+        gap: 20px 20px;
+        text-align: center;
     }
       
 }
