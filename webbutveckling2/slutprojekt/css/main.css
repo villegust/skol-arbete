@@ -364,11 +364,8 @@ article{
                 column-gap: 2rem;
     }
     .item-img, #reviews article .item-img{
-        height: 260px;
+        height: 260px;  
     }
-
-    
-
 }
 
 @media(min-width: 992px){
@@ -450,9 +447,11 @@ article{
 
     #info-taken{
         display: grid;
+        margin-left: 0;
         justify-content: center;
         gap: 20px 20px;
         text-align: center;
     }
+    
       
 }
