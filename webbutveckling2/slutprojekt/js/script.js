@@ -32,4 +32,6 @@ function topFunction() {
 }
 
 // datum skript
-document.write(new Date().getFullYear())
+// document.write(new Date().getFullYear())
+document.getElementById("carr").innerText= `Copyright ${new Date().getFullYear()} © All Rights Reserved`
+

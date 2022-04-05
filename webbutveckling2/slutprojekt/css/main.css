@@ -111,6 +111,7 @@ body{
 }
 
 img{
+    height: 400px;
     width: 100%;
     display: block;
 }
@@ -226,7 +227,7 @@ article{
 }
 .item-img span{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     right: 0;
     display: inline-block;
     padding: 1rem 1.5rem;
@@ -302,10 +303,7 @@ article{
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    height: 400px;
-    
-  }
+
 
 
 /* footer */
@@ -393,6 +391,8 @@ article{
         grid-column: 3 / 5;
         grid-row: 2 / 3;
     }
+
+    
     
 }
 
