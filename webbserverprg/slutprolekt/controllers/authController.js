@@ -1,4 +1,5 @@
-const User = require("../models/User")
+const User = require("../models/User");
+
 
 //Tar hand om errors
 const handleErrors = (err) => {

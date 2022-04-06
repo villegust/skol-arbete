@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const authRoutes = require("./routes/authRoutes")
-const cookieParser = require("cookie-parser")
+const authRoutes = require("./routes/authRoutes");
+const cookieParser = require("cookie-parser");
+
 
 const app = express();
 
@@ -38,24 +39,3 @@ mongoose.connect(dbURI, (err) => {
 app.get("/", (req, res) => res.render("home"));
 app.get("/otherSide", (req, res) => res.render("otherSide"));
 app.use(authRoutes);
-
-//cookies
-
-app.get("/set-cookies", (req, res) => {
-
-  res.cookie("newUser", false);
-  res.cookie("isEmployee", true, {maxAge : 1000 * 60 * 60 * 24, httpOnly : true});
-
-  res.send("You got the cookies!");
-
-});
-
-app.get("/read-cookies", (req, res) => {
-
-  const cookies = req.cookies;
-
-  console.log(cookies.newUser);
-
-  res.json(cookies)
-
-});
