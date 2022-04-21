@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
-const {requireAuth} = require("./middleware/authMiddleware");
+const {requireAuth, checkUser} = require("./middleware/authMiddleware");
 
 
 const app = express();
@@ -38,6 +38,9 @@ mongoose.connect(dbURI, (err) => {
       
 })
 // routes
+// "*" betyder att jag kommer att applicera koden till alla routs
+app.get("*", checkUser);
 app.get("/", (req, res) => res.render("home"));
 app.get("/otherSide", requireAuth, (req, res) => res.render("otherSide"));
+app.get("/profile", requireAuth, (req, res) => res.render("profile"));
 app.use(authRoutes);

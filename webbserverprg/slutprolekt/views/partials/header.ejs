@@ -10,8 +10,16 @@
   <nav>
     <h1><a href="/">Test</a></h1>
     <ul>
+      <% if (user) { %>
+      <li>Welcome, <%= user.email %></li>
+      <a href="/profile">
+        <img src="/background.jpg" alt="Avatar" class="avatar">
+      </a>
       <li><a href="/logout">Logout</a></li>
+
+      <%} else{ %>
       <li><a href="/login">Login</a></li>
       <li><a href="/signup">Signup</a></li>
+      <% } %>
     </ul>
   </nav>
