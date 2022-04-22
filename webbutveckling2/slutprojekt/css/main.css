@@ -224,7 +224,7 @@ article{
 }
 .item-img img{
     object-fit: cover;
-    height: 25vh;
+    height: 20vh;
 }
 .item-img span{
     position: absolute;
