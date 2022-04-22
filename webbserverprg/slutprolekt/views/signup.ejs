@@ -3,13 +3,19 @@
 
 <form>
     <h2>Sign Up</h2>
+    <label for="username">Username</label>
+    <input type="text" name="username" required />
+    <div class="username error"></div>
+
     <label for="email">Email</label>
     <input type="text" name="email" required />
     <div class="email error"></div>
 
     <label for="password">Password</label>
-    <input type="password" name="password" required />
+    <input type="password" name="password" required id="password"/>
     <div class="password error"></div>
+    <input type="checkbox" onclick="myFunction()">Show Password 
+    
 
     <button>Sign Up</button>
 
@@ -23,6 +29,7 @@
     const form = document.querySelector("form");
     const emailError = document.querySelector(".email.error");
     const passwordError = document.querySelector(".password.error");
+    const usernameError = document.querySelector(".username.error");
 
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -33,11 +40,12 @@
 
         const email = form.email.value;
         const password = form.password.value;
+        const username = form.username.value;
 
         try{
             const res = await fetch("/signup", {
                 method : "POST",
-                body : JSON.stringify({email, password}),
+                body : JSON.stringify({email, password, username}),
                 headers : {"Content-Type" : "application/json"}
             });
             const data = await res.json();
@@ -45,16 +53,28 @@
             if (data.errors){
                 emailError.textContent = data.errors.email;
                 passwordError.textContent = data.errors.password;
+                usernameError.textContent = data.errors.username;
             }
 
             if (data.user){
-                location.assign("/")
+                location.assign("/home")
             }
         }
         catch(err){
             console.log(err);
         }
     });
+</script>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+    } 
 </script>
 
 <%- include("partials/footer"); -%>

@@ -119,7 +119,7 @@ header .btn{
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 80px;
-  margin: 80PX AUTO;
+  margin: 80px auto;
   max-width: 1200px;
 }
 .content{
@@ -130,6 +130,22 @@ header .btn{
   text-align: center;
   padding: 0 20px 30px 20px
 }
+
+.profileContainer{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.profileContent{
+  margin-left: 15%;
+  width: 70%;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  text-align: left;
+}
+
 .content img{
   width: 100px;
   margin: -30px auto 20px;

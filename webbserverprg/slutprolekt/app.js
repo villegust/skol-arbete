@@ -40,7 +40,8 @@ mongoose.connect(dbURI, (err) => {
 // routes
 // "*" betyder att jag kommer att applicera koden till alla routs
 app.get("*", checkUser);
-app.get("/", (req, res) => res.render("home"));
+app.get("/", (req, res) => res.render("index"));
+app.get("/home", requireAuth, (req, res) => res.render("home"));
 app.get("/otherSide", requireAuth, (req, res) => res.render("otherSide"));
 app.get("/profile", requireAuth, (req, res) => res.render("profile"));
 app.use(authRoutes);
