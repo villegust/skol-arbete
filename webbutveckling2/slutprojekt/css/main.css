@@ -229,7 +229,7 @@ article{
 }
 .item-img span{
     position: absolute;
-    /* bottom: 0; */
+    bottom: 0;
     right: 0;
     display: inline-block;
     padding: 1rem 1.5rem;
