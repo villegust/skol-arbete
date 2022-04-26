@@ -84,6 +84,7 @@ a{
 }
 
 #myBtn {
+    font-family: var(--audiowide);
     display: none;
     position: fixed;
     bottom: 20px;
