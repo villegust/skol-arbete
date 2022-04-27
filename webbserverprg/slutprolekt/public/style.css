@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body{
-  margin: 20px 40px;
+  margin: 0 0;
   font-size: 1.2rem;
   letter-spacing: 1px;
   background: #fafafa;
+
   /* background-image: url("/background.jpg"); */
 }
+
+
+
 h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
-  margin: 0;
+  margin: 2px;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   color: #444;
@@ -30,6 +34,8 @@ nav{
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 120px;
+  background-color: #ddd;
+
   
 }
 nav ul{
@@ -181,8 +187,12 @@ header .btn{
 
 footer{
   text-align: center;
-  margin-top: 100px;
-  color: #aaa;
+  background-color: #ddd;
+  color: black;
+  height: 50px;
+  width: 99.8%;
+  margin-top: 25%;
+  /* bottom: 0; */
 }
 
 
