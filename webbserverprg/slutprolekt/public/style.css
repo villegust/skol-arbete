@@ -15,10 +15,16 @@ h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
 }
 ul{
   list-style-type: none;
+  text-align: center;
 }
 a{
   text-decoration: none;
 }
+
+p{
+  font-size: 20px;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -63,7 +69,8 @@ input{
   border-radius: 4px;
   border: 1px solid #ddd;
   font-size: 1em;
-  width: 100%;
+  width: 90%;
+  position: relative;
 }
 label{
   display: block;
@@ -131,35 +138,57 @@ header .btn{
   padding: 0 20px 30px 20px
 }
 
-.profileContainer{
-  width: 100%;
-  height: 400px;
-  text-align: center;
-}
-
-.profileContent{
-  margin-left: 15%;
-  width: 70%;
-  padding: 20px;
-  background-color: #ddd;
-  border-radius: 10px;
-  text-align: left;
-}
-
 .content img{
   width: 100px;
   margin: -30px auto 20px;
 }
 
-.avatar {
-  vertical-align: middle;
+.avatar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  background-color: #fee996;
+}
+
+.profileAvatar li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fee996;
+}
+
+
+.flex-container {
+  display: flex;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
 }
 
 footer{
   text-align: center;
   margin-top: 100px;
   color: #aaa;
+}
+
+
+#togglePassword{
+  margin-top: 12px;
+  margin-left: 10px; 
+  cursor: pointer;
+  position: absolute;
 }

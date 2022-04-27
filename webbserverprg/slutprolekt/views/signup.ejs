@@ -12,9 +12,12 @@
     <div class="email error"></div>
 
     <label for="password">Password</label>
-    <input type="password" name="password" required id="password"/>
+    <input type="password" name="password" required id="id_password" />
+    <i class="far fa-eye" id="togglePassword"></i>
     <div class="password error"></div>
-    <input type="checkbox" onclick="myFunction()">Show Password 
+
+        
+    
     
 
     <button>Sign Up</button>
@@ -67,14 +70,16 @@
 </script>
 
 <script>
-    function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-    } 
+  const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 </script>
 
 <%- include("partials/footer"); -%>
