@@ -6,8 +6,11 @@
     <div class="content">
       <img src="/img/loginpic.jpg" alt="">
       <div class="headings">
-        <h2>Login to see the full feature!</h2>
-        <a href="/home" class="btn">Go To Home</a>
+        <h2>Login or Signup to see the full feature!</h2>
+        <% if (user) { %>
+          <a href="/home" class="btn">Go To Home</a>  
+        <%} %>
+      
       </div>
     </div>
   </div>
