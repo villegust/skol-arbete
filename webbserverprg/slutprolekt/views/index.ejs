@@ -4,12 +4,15 @@
 <header>
   <div class="container">
     <div class="content">
-      <img src="/img/loginpic.jpg" alt="">
       <div class="headings">
-        <h2>Login or Signup to see the full feature!</h2>
         <% if (user) { %>
-          <a href="/home" class="btn">Go To Home</a>  
-        <%} %>
+          <h2>You have successfully logged in to this website.<br></h2>
+          <p>Welcome <%= user.username%>. You can now check your profile or click the button bellow to get to another side.  </p>
+          <a href="/otherSide" class="btn">View Ohter Side</a>
+        <%} else{ %>
+          <img src="/img/loginpic.jpg" alt="">
+          <h2>Login or Signup to see the full feature!</h2>
+          <% } %>
       
       </div>
     </div>
