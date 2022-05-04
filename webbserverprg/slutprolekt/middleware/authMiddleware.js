@@ -23,7 +23,7 @@ const requireAuth = (req, res, next) => {
     }
 }
 
-//kollar användaren
+//kollar användaren om den är inloggad och token finns. 
 const checkUser = (req, res, next) => {
     const token = req.cookies.jwt;
     

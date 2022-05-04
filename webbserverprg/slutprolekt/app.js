@@ -16,13 +16,15 @@ app.use(cookieParser());
 // view engine
 app.set("view engine", "ejs");
 
-// databas connection
+// databas anslutningen
 const dbURI = "mongodb+srv://new-user12:qwerty123456@cluster0.8z293.mongodb.net/node-auth";
 
+//sätter upp en port på datorn som servern körs på
 app.listen(3000, () => {
   console.log("Server är igång");
 });
 
+//ett error om mongoDB inte ansluter.
 mongoose.connect(dbURI, (err) => {
     if (err) {
         throw err;

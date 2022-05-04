@@ -50,14 +50,18 @@
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        //resetar errors
+        //resetar errormeddelanden
         emailError.textContent = "";
         passwordError.textContent = "";
+        usernameError.textContent = "";
 
         const email = form.email.value;
         const password = form.password.value;
         const username = form.username.value;
 
+        // skickar en POST med det man har skrivit till databasen. 
+        // Om man inte har skrivit ett för kort lösenord eller en ogiltlig e post så kommer man in
+        // annars får man errors.
         try{
             const res = await fetch("/signup", {
                 method : "POST",
@@ -87,10 +91,10 @@
   const password = document.querySelector('#id_password');
  
   togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
+    // växla typattributet
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
-    // toggle the eye slash icon
+    // växla mellan ikonen för ögat
     this.classList.toggle('fa-eye-slash');
 });
 </script>

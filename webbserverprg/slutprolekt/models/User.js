@@ -2,10 +2,13 @@ const mongoose = require("mongoose");
 const {isEmail} = require("validator");
 const bcrypt = require("bcrypt");
 
+
+//definierar dokumentets struktur i databasen 
 const userSchema = new mongoose.Schema({
 
     username : {
         type: String,
+        unique: true,
         required: [true, "Please enter a username"]
     },
 
@@ -22,11 +25,6 @@ const userSchema = new mongoose.Schema({
         minlength: [6, "Minimum length is 6 characters"]
     },
 });
-
-// userSchema.post("save", function(doc, next){
-//     console.log("New user was created", doc);
-//     next();
-// });
 
 //krypterar ditt lösenord med en salt och med bcrypt (hash)
 userSchema.pre("save", async function(next){

@@ -5,6 +5,7 @@
   <div class="container">
     <div class="content">
       <div class="headings">
+        <!-- Kollar om man är inloggad eller inte, om man är det renderar det en grej och om man inte är inloggad renderar det en annan sak.-->
         <% if (user) { %>
           <h2>You have successfully logged in to this website.<br></h2>
           <p>Welcome <%= user.username%>. You can now check your profile or click the button bellow to get to another side.  </p>

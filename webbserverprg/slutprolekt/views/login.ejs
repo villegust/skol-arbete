@@ -41,6 +41,8 @@
         const email = form.email.value;
         const password = form.password.value;
 
+        //kollar om det man har skrivit in stämmer överänns med det som finns på databasen. 
+        //Om det gör det så kommer man till index sidan, annars får man error.
         try{
             const res = await fetch("/login", {
                 method : "POST",
@@ -69,10 +71,10 @@
     const password = document.querySelector('#id_password');
    
     togglePassword.addEventListener('click', function (e) {
-      // toggle the type attribute
+      // växla typattributet
       const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
       password.setAttribute('type', type);
-      // toggle the eye slash icon
+      // växla mellan ikonen för ögat
       this.classList.toggle('fa-eye-slash');
   });
   </script>
