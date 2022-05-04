@@ -16,13 +16,8 @@ app.use(cookieParser());
 // view engine
 app.set("view engine", "ejs");
 
-// database connection
+// databas connection
 const dbURI = "mongodb+srv://new-user12:qwerty123456@cluster0.8z293.mongodb.net/node-auth";
-
-// mongoose.connect(dbURI, {  }) //useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true
-//   // .then((result) => app.listen(3000))
-//   .catch((err) => console.log(err));
-
 
 app.listen(3000, () => {
   console.log("Server är igång");
