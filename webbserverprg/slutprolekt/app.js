@@ -42,5 +42,4 @@ app.get("/", (req, res) => res.render("index"));
 app.get("/", requireAuth, (req, res) => res.render("index"));
 app.get("/otherSide", requireAuth, (req, res) => res.render("otherSide"));
 app.get("/profile", requireAuth, (req, res) => res.render("profile"));
-app.get("/editProfile", requireAuth, (req, res) => res.render("editProfile"));
 app.use(authRoutes);
