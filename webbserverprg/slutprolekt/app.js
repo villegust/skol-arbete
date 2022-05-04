@@ -36,6 +36,7 @@ mongoose.connect(dbURI, (err) => {
 })
 // routes
 // "*" betyder att jag kommer att applicera koden till alla routs
+// requireAuth gör att man måste vara inloggad för att kunna se sidan.
 app.get("*", checkUser);
 app.get("/", (req, res) => res.render("index"));
 app.get("/", requireAuth, (req, res) => res.render("index"));
